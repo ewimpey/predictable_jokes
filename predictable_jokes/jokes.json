@@ -1,0 +1,17 @@
+[
+    {
+        "joke": "A data scientist at Amazon had built an optimizer, but when it was validated by a third party, they revealed that it wasn't providing optimal results. Turns out Amazon introduced a constraint to only use Prime numbers.",
+        "topics": ["data science", "optimization"],
+        "complexity": "easy"
+    },
+    {
+        "joke": "Three data analysts were finalizing an infographic when they started to argue over the background. “We've always used a solid background before!” said one. The other two were unhappy with the status quo. “We need to fade multiple colors!” said another. “It should be various shades of the same color!” said a third. When the analytics manager came to check on the progress she listened to the argument for a few minutes before snapping sharply: “What's going on in here?”. One of the analysts replied: “Gradient dissent”.",
+        "topics": ["data visualization", "optimization"],
+        "complexity": "medium"
+    },
+    {
+        "joke": "Mean and Median were having a computer vision competition to see who could build the best animal classifier. The models were surprisingly similar, but in the end Mean's model won. When they were analyzing the results, it looked like Median's model wasn't able to distinguish the difference between bobcats and other cats. Probably because Median ignores the long tails.",
+        "topics": ["statistics", "computer vision"],
+        "complexity": "easy"
+    }
+]
