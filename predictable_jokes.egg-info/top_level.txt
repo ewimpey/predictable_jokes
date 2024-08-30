@@ -1,2 +1,0 @@
-predictable_jokes
-tests

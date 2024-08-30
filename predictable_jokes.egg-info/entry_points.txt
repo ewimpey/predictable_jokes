@@ -1,2 +1,0 @@
-[console_scripts]
-tell-a-joke = predictable_jokes.jokes:get_random_joke
