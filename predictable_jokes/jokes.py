@@ -16,69 +16,25 @@ def load_jokes(file_path):
         jokes = json.load(file)
     return jokes
 
-def get_random_joke():
+def tell_joke(topic=None, complexity=None):
     """
-    Load jokes and return a random joke.
-    
-    Returns:
-        str: A random joke.
-    """
-    # Define the path to the jokes.json file
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(current_dir, 'jokes.json')
-    
-    # Load jokes from the file
-    jokes = load_jokes(file_path)
-    
-    # Return a random joke from the list
-    return random.choice(jokes)['joke']
+    Fetch a joke optionally filtered by topic or complexity.
 
-def get_joke_by_topic(topic):
-    """
-    Return a random joke filtered by a specific topic.
-    
     Args:
-        topic (str): The topic to filter jokes by.
-    
+        topic (str, optional): Topic to filter jokes.
+        complexity (str, optional): Complexity level ('easy', 'medium', 'hard').
+
     Returns:
-        str: A random joke from the specified topic, or a message if no jokes found.
+        str: A joke matching the filters, or a fallback message.
     """
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(current_dir, 'jokes.json')
+    file_path = os.path.join(current_dir, 'data', 'jokes.json')
     jokes = load_jokes(file_path)
-    
-    filtered_jokes = [joke['joke'] for joke in jokes if topic in joke['topics']]
-    if filtered_jokes:
-        return random.choice(filtered_jokes)
-    else:
-        return "No jokes found for this topic."
 
-def get_joke_by_complexity(complexity):
-    """
-    Return a random joke filtered by a specific complexity level.
-    
-    Args:
-        complexity (str): The complexity level to filter jokes by ('easy', 'medium', 'hard').
-    
-    Returns:
-        str: A random joke from the specified complexity level, or a message if no jokes found.
-    """
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(current_dir, 'jokes.json')
-    jokes = load_jokes(file_path)
-    
-    filtered_jokes = [joke['joke'] for joke in jokes if joke['complexity'] == complexity]
-    if filtered_jokes:
-        return random.choice(filtered_jokes)
-    else:
-        return "No jokes found for this complexity level."
+    # Apply filters if provided
+    if topic:
+        jokes = [j for j in jokes if topic in j['topics']]
+    if complexity:
+        jokes = [j for j in jokes if j['complexity'] == complexity]
 
-if __name__ == "__main__":
-    # Print a random joke
-    print(get_random_joke())
-
-    # Example: Print a joke filtered by topic
-    print(get_joke_by_topic('machine learning'))
-
-    # Example: Print a joke filtered by complexity
-    print(get_joke_by_complexity('easy'))
+    return random.choice(jokes)['joke'] if jokes else "No jokes found for this filter."

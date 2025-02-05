@@ -8,7 +8,7 @@ setup(
     install_requires=[],  # List dependencies if any, otherwise leave it empty
     entry_points={
         'console_scripts': [
-            'tell-a-joke=predictable_jokes.jokes:get_random_joke',  # Command-line tool entry point
+            'tell-joke=predictable_jokes.jokes:tell-joke',  # Command-line tool entry point
         ],
     },
     author='Evan Wimpey',  
