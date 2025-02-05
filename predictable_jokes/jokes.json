@@ -13,5 +13,95 @@
         "joke": "Mean and Median were having a computer vision competition to see who could build the best animal classifier. The models were surprisingly similar, but in the end Mean's model won. When they were analyzing the results, it looked like Median's model wasn't able to distinguish the difference between bobcats and other cats. Probably because Median ignores the long tails.",
         "topics": ["statistics", "computer vision"],
         "complexity": "easy"
+    },
+    {
+        "joke": "“To know thyself is the beginning of wisdom” – Socrates. “To know thyself too well is the beginning of overfit” – Training data",
+        "topics": ["data science", "validation"],
+        "complexity": "easy"
+    },
+    {
+        "joke": "A data scientist at a chemical supply company was tasked with completely overhauling the forecasts for all of their product sales. She built some great models, and most of them were performing well, with the notable exception of forecasting test tubes. The company brought in a consultant to help out. After studying the models, the consultants discovered the problem. “The time-series models are working great, but you can’t use time-series for tubular data”.",
+        "topics": ["data science", "time series"],
+        "complexity": "medium"
+    },
+    {
+        "joke": "Why did the optimist shade in the positive values under the standard normal curve? He always likes to see it as Gauss half full.",
+        "topics": ["statistics"],
+        "complexity": "easy"
+    },
+    {
+        "joke": "A petroleum engineer couldn't understand why so many underground pipes kept malfunctioning so he hired a data scientist. After a few weeks of working on it, the engineer asked her for an explanation, but the data scientist complained that there wasn't enough data to draw any conclusions. 'What are you talking about, we've got sensor data from the entire pipeline!' said the engineer. 'Yeah, it's a good start, but if we want useful insights we're going to need to do some more digging'.",
+        "topics": ["data science", "data exploration"],
+        "complexity": "easy"
+    },
+    {
+        "joke": "Why were the junior data scientists sitting meditatively in a dark conference room? Their boss told them they needed to get better at visualizing data.",
+        "topics": ["data visualization"],
+        "complexity": "easy"
+    },
+    {
+        "joke": "A physicist-turned-data-scientist loved building tree based models, but would only use Gini Impurity as the split criteria. “Second law of thermodynamics! If we use entropy, then the trees can only get worse”",
+        "topics": ["data science"],
+        "complexity": "easy"
+    },
+    {
+        "joke": "Why didn’t the data scientist contribute to the software engineering project? He was afraid to commit.",
+        "topics": ["software", "engineering"],
+        "complexity": "easy"
+    },
+    {
+        "joke": "A Chief Data Officer wanted to stay up to date in the field so she asked her top data scientist “What’s the hottest thing in data science right now?” The DS lead thought for a few moments and then answered: “Training large, complex neural networks on a laptop”.",
+        "topics": ["data science", "hardware"],
+        "complexity": "medium"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
+    },
+    {
+        "joke": "",
+        "topics": [""],
+        "complexity": "easy"
     }
 ]
