@@ -116,3 +116,6 @@ cython_debug/
 
 # Pytest
 .pytest_cache/
+
+# My own little notebook
+testing.ipynb

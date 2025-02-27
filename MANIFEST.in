@@ -1,1 +1,3 @@
 include predictable_jokes/data/jokes.json
+
+exclude testing.ipynb
