@@ -50,7 +50,7 @@ Classic example of Scholastic Grade Descent.
 ## **📖 Get the Book: Predictable Jokes**
 This package is based on the book **Predictable Jokes**, a collection of AI, ML, and data science humor. If you enjoy these jokes, grab the full book here:  
 
-📚 **[Get the Book Here]((https://www.amazon.com/Predictable-Jokes-Data-Driven-Analytics-Learning/dp/B0C6NZFRDP))**
+📚 **[Get the Book Here](https://www.amazon.com/Predictable-Jokes-Data-Driven-Analytics-Learning/dp/B0C6NZFRDP)**
 
 ---
 
@@ -66,9 +66,14 @@ Want to bring **live AI & Data Science comedy** to your event? You can book me f
 ---
 
 ## **💻 Contributing**
-Want to add your own jokes? Pull requests are welcome! Check out the repository on GitHub:  
-🔗 **[GitHub Repo](https://github.com/ewimpey/predictable_jokes)**  
+Want to add your own jokes? Pull requests are welcome! 
 
+Simply:
+1. **Fork** the repo on GitHub.
+2. **Create a new branch** (e.g. 'not-genai-jokes-i-promise').
+3. **Add _your_ joke** to the `jokes.json` file.
+4. **Commit & push your changes** to the fork.
+5. **Open a PR** and get your joke included!
 ---
 
 ## **📜 License**
