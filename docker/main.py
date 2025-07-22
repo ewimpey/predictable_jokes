@@ -1,16 +1,13 @@
 from predictable_jokes.jokes import tell_joke
-import os
+import argparse
 
-def get_topic():
-    if os.getenv("TOPIC"):
-        return os.getenv("TOPIC")
-    else:
-        return "data science"
-    
-def get_complexity():
-    if os.getenv("COMPLEXITY"):
-        return os.getenv("COMPLEXITY")
-    else:
-        return "medium"
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Tell a joke with optional topic and complexity.')
+    parser.add_argument('--topic', type=str, default='',
+                      help='The topic of the joke')
+    parser.add_argument('--complexity', type=str, default='',
+                      help='The complexity level of the joke')
+    return parser.parse_args()
 
-tell_joke(topic=get_topic(), complexity=get_complexity())
+args = parse_arguments()
+tell_joke(topic=args.topic, complexity=args.complexity)
