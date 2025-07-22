@@ -32,4 +32,5 @@ jobs:
         with:
           context: "{{defaultContext}}:docker"
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: ${{ vars.DOCKERHUB_USERNAME }}/predictable-jokes:latest
