@@ -12,10 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy main script
 COPY main.py .
-
-# Set default environment variables
-ENV TOPIC="data science"
-ENV COMPLEXITY="medium"
-
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 # Run the script
-CMD ["python", "main.py"]
+ENTRYPOINT ["/entrypoint.sh"]
