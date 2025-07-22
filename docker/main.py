@@ -3,7 +3,7 @@ import os
 
 def get_topic():
     if os.getenv("TOPIC"):
-        os.getenv("TOPIC")
+        return os.getenv("TOPIC")
     else:
         return "data science"
     
