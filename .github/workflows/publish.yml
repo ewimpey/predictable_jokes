@@ -32,4 +32,4 @@ jobs:
         with:
           context: "{{defaultContext}}:docker"
           push: true
-          tags: user/app:latest
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/predictable-jokes:latest
