@@ -1,0 +1,36 @@
+name: Publish Docker Image
+description: This workflow builds and pushes a Docker image to Docker Hub on every push to the repository
+
+on:
+  push:     
+    paths:
+      - 'docker/**'
+      - '.github/workflows/publish.yml'
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+      -
+        name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      -
+        name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: "{{defaultContext}}:docker"
+          push: true
+          platforms: linux/amd64,linux/arm64
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/predictable-jokes:latest
